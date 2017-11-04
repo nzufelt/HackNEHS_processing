@@ -7,13 +7,16 @@
     <style>
     body {
       text-align: center;
-    }
-    p,text {
       font-family: 'Roboto', sans-serif;
     }
     h1 {
       font-family: 'Georgia', serif;
       font-weight: 200;
+    }
+    ol {
+      text-align: left;
+      margin-top: 30px;
+      margin-bottom: 30px;
     }
 
     img {
@@ -22,17 +25,18 @@
 
     #container {
       margin: 0 auto;
-      margin-top: 50px;
+      /*margin-top: 50px;*/
       width: 95%;
     }
 
     #explain-text {
-      padding-top: 100px;
+      /*padding-top: 100px;*/
       margin: 0 auto;
       width: 70%;
     }
+
     </style>
-    <script src='https://d3js.org/d3.v4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js'></script>
 </head>
 <body>
   <div id="container">
@@ -40,25 +44,39 @@
   <img src="https://www.hacknehs.com/assets/images/logo.png" />
   <h3>HackNEHS 2017
   </h3>
+  <div id="processing-demo">
+    <canvas style="border: 1px solid rgb(198, 198, 198);" data-processing-sources="www\bouncing_ball.pde"></canvas>
+  </div>
   <div id="explain-text">
     <p>
-      This site contains some of the basics that you need to get started. Here's what you need:
+      This site contains some of the basics that you need to get started today. Here's what you need:
     </p>
     <ol>
       <li>
         Head over to <a href="https://processing.org/download/">processing.org</a> and download Processing.
       </li>
       <li>
-        Download the <a href="https://processing.org/download/">starter code</a> and put it somewhere on your computer where you can find it.
+        Download the <a href="https://cdn.rawgit.com/nzufelt/HackNEHS_processing/master/starter_code/bouncing_ball/bouncing_ball.pde">starter file</a> and put it somewhere on your computer where you can find it.
       </li>
       <li>
-        Help a neightbor do the same!
+        Help a neighbor do the same!
       </li>
     </ol>
     <p>
-       When you're done, you can head over to the <a href="not_ready!">github repo</a> to grab the final code!
+       When you're done, you can head over to the <a href="https://github.com/nzufelt/HackNEHS_processing">github repo</a> to grab the final code!
     </p>
     <h1> Happy Hacking!</h1>
+    <p>
+       Other notes:
+    </p>
+    <ul>
+      <li>
+        Check out <a href="https://www.openprocessing.org/">openprocessing.org</a> for other ideas, inspiration, and code!
+      </li>
+      <li>
+        You can host a processing sketch on a website (Like I'm doing above) using <a href="http://processingjs.org/articles/p5QuickStart.html">processing.js</a>, a JavaScript library.
+      </li>
+    </ul>
   </div>
 
 
